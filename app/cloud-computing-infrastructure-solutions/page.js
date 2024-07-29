@@ -2,10 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from "../../app/meta-data-driven-applications/styles.module.css";
 import styles1 from "../../components/ai-intagrate&devolop-content/styles.module.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
-import cloud from "../../public/images/cloud/cloud.png";
+import cloud from "../../public/images/cloud/cloud.webp";
 
 export const metadata = {
     title: "Cloud Computing and Infrastructure Solutions by i11Labs",
@@ -23,29 +20,28 @@ export default function SoftwareDevelopment() {
 
     const datamanagement = [
         {
-            img: "/images/cloud/1.png",
+            img: "/images/cloud/1.webp",
             title: "Cloud Strategy Development",
             para: "We start with a detailed assessment of your current IT infrastructure and business objectives. We develop a customized cloud strategy that includes choosing the right cloud model (public, private, or hybrid) and defining the roadmap for migration and integration.",
         },
         {
-            img: "/images/cloud/2.png",
+            img: "/images/cloud/2.webp",
             title: "Seamless Migration",
             para: "We ensure a smooth transition to the cloud with minimal disruption to your operations. Our experts handle the migration process, from planning and execution to validation and optimization.",
         },
         {
-            img: "/images/cloud/3.png",
+            img: "/images/cloud/3.webp",
             title: "Infrastructure Optimization",
             para: "Post-migration, we continuously optimize your cloud infrastructure to ensure peak performance, cost efficiency, and scalability. We leverage advanced tools and techniques to monitor, manage, and improve your cloud environment.",
         },
         {
-            img: "/images/cloud/4.png",
+            img: "/images/cloud/4.webp",
             title: "Security and Compliance",
             para: "We prioritize the security and compliance of your cloud infrastructure. Our solutions incorporate industry best practices and advanced security measures to protect your data and applications.",
         },
     ];
     return (
         <>
-            <Header />
             {/* Banner image */}
             <div className='container-fluid'>
                 <div className='row'>
@@ -162,8 +158,6 @@ export default function SoftwareDevelopment() {
                 </div>
             </div>
 
-            <Scroll />
-            <Footer />
         </>
     );
 }

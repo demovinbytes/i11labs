@@ -2,10 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from "../../app/meta-data-driven-applications/styles.module.css";
 import styles1 from "../../components/ai-intagrate&devolop-content/styles.module.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
-import tech from "../../public/images/technology/cloud.png";
+import tech from "../../public/images/technology/cloud.webp";
 
 export const metadata = {
     title: "Technology Consultation and Strategy Services by i11Labs",
@@ -22,29 +19,29 @@ export default function Technology() {
     
     const datamanagement = [
         {
-            img: "/images/technology/1.png",
+            img: "/images/technology/1.webp",
             title: "Expert Guidance",
             para: "Our experienced consultants provide expert guidance on a wide range of technology areas, including digital transformation, cloud computing, data management, cybersecurity, and emerging technologies.",
         },
         {
-            img: "/images/technology/2.png",
+            img: "/images/technology/2.webp",
             title: "Implementation Support",
             para: "We assist with the implementation of your technology strategy, ensuring that projects are executed efficiently and effectively. Our team provides support throughout the process to ensure seamless integration and minimal disruption.",
         },
         {
-            img: "/images/technology/3.png",
+            img: "/images/technology/3.webp",
             title: "Continuous Improvement",
             para: "Technology is constantly evolving, and so are your business needs. We provide ongoing support and continuously refine your technology strategy to adapt to changing requirements and advancements in technology.",
         },
         {
-            img: "/images/technology/4.png",
+            img: "/images/technology/4.webp",
             title: "Focus on Innovation",
             para: "We help you stay ahead of the curve by identifying and implementing innovative technologies and practices that drive growth and competitive advantage.",
         },
     ];
     return (
         <>
-            <Header />
+
 {/* Banner image */}
             <div className='container-fluid'>
                 <div className='row'>
@@ -156,8 +153,6 @@ export default function Technology() {
         </div>
       </div>
 
-            <Scroll />
-            <Footer />
             </>
             );
 }

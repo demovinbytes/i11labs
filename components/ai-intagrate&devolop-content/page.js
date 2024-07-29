@@ -4,9 +4,6 @@ import { useState } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./styles.module.css"
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
 import integrate from "../../public/images/AI/unsplash.png"
 import arrow from "../../public/images/AI/right.svg"
 
@@ -15,17 +12,17 @@ export default function Aritificial() {
 
   const Service = [
     {
-      img: "/images/AI/1.png",
+      img: "/images/AI/1.webp",
       title: "Strategic Assessment",
       para: "We initiate by aligning with your business goals, evaluating your data ecosystem, infrastructure readiness, and risk factors. This phase sets the foundation for a tailored strategy that aligns with your unique objectives and constraints.",
     },
     {
-      img: "/images/AI/2.png",
+      img: "/images/AI/2.webp",
       title: "Transforming Potential into Reality",
       para: "Our comprehensive approach empowers your enterprise to leverage the transformative power of generative AI responsibly and effectively. By partnering with i11Labs, you gain access to cutting-edge AI strategies that are ethical, sustainable, and perfectly aligned with your business objectives.",
     },
     {
-      img: "/images/AI/3.png",
+      img: "/images/AI/3.webp",
       title: "Enablement Strategy Components",
       para: "",
     },
@@ -74,10 +71,6 @@ export default function Aritificial() {
 
   return (
     <>
-
-      <Header />
-
-
       {/* carousel */}
       <div className='container-fluid'>
         <div className='row'>
@@ -245,13 +238,6 @@ export default function Aritificial() {
       </div>
 
 
-
-
-
-
-
-      <Scroll />
-      <Footer />
     </>
   );
 }

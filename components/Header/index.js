@@ -2,13 +2,13 @@
 import styles from "./header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/images/Navbar/i11 Labs logo.png";
+import Logo from "../../public/images/Navbar/i11 Labs logo.webp";
 import { usePathname } from 'next/navigation';
 import React, { useState, useEffect } from "react";
-import Arrow from "../../public/images/Navbar/arrow.png";
-import ActiveArrow from "../../public/images/Navbar/Activearrow.png";
-import Menublack from "../../public/images/Navbar/menu.png";
-import Close from "../../public/images/Navbar/close.png";
+import Arrow from "../../public/images/Navbar/arrow.webp";
+import ActiveArrow from "../../public/images/Navbar/Activearrow.webp";
+import Menublack from "../../public/images/Navbar/menu.webp";
+import Close from "../../public/images/Navbar/close.webp";
 
 export default function Header() {
     const currentRoute = usePathname();
@@ -66,7 +66,7 @@ export default function Header() {
                                                     <Link className={`${styles.subheadercontent1} dropdown-item ms-2 mb-2 navunderline py-3`} href="/feeds-to-leads" rel="noreferrer" style={{ borderBottom: "1px solid #C1D1E0" }}>FTL</Link>
                                                 </li>
                                                 <li data-bs-dismiss="offcanvas" aria-current="page">
-                                                    <Link className={`${styles.subheadercontent1} dropdown-item ms-2 pt-3`} href="/social-initiatives" rel="noreferrer">KWC</Link>
+                                                    <Link className={`${styles.subheadercontent1} dropdown-item ms-2 pt-3`} href="#" rel="noreferrer">KWC</Link>
                                                 </li>
                                             </ul>
                                         </li>

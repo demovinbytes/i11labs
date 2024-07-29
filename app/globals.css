@@ -304,11 +304,11 @@ margin-left: 50% !important;
   }
 
   .carousel-control-next-icon {
-    background-image: url(../public/images/home/go\ right@2x.png) !important;
+    background-image: url(../public/images/home/go\ right@2x.webp) !important;
   }
   
   .carousel-control-prev-icon {
-    background-image: url(../public/images/home/go\ left@2x.png) !important;
+    background-image: url(../public/images/home/go\ left@2x.webp) !important;
   }
   
   .carousel-control-next-icon,
@@ -616,12 +616,12 @@ margin-left: 50% !important;
 
 /* ourDNA */
 .bg-ourdna{
-  background: url("../public/images/our-DNA/dna@2x.png") no-repeat;
+  background: url("../public/images/our-DNA/dna@2x.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
 .bg-ourdna-mb{
-  background: url("../public/images/our-DNA/dnamob.png") no-repeat;
+  background: url("../public/images/our-DNA/dnamob.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
@@ -759,13 +759,13 @@ margin-left: 50% !important;
 
 /* How we Serve You */
 .bg-serve {
-  background: url("../public/images/serve/How We Serve You@2x.png") no-repeat;
+  background: url("../public/images/serve/How We Serve You@2x.webp") no-repeat;
   background-size: 100% 100%;
   padding: 27% 10% 3% 10%;
 }
  
 .bg-serve-mb {
-  background: url("../public/images/serve/How\ We\ Serve\ You\ m.png") no-repeat;
+  background: url("../public/images/serve/How\ We\ Serve\ You\ m.webp") no-repeat;
   background-size: 100% 100%;
   padding: 48% 10% 3% 10%;
 }
@@ -783,46 +783,46 @@ margin-left: 50% !important;
  
 /* Custom software development and integration */
 .bg-software {
-  background: url("../public/images/software/Custom Software @2x.png") no-repeat;
+  background: url("../public/images/software/Custom Software @2x.webp") no-repeat;
   background-size: 100% 100%;
   padding: 20% 10% 3% 10%;
 }
  
 .bg-software-mb {
-  background: url("../public/images/software/Custom Software Development.png") no-repeat;
+  background: url("../public/images/software/Custom Software Development.webp") no-repeat;
   background-size: 100% 100%;
   padding: 27% 10% 3% 10%;
 }
 /* Application modernization*/
 .bg-app{
-  background: url("../public/images/AppModernization/ApplicationModernization@2x.png") no-repeat;
+  background: url("../public/images/AppModernization/ApplicationModernization@2x.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
 .bg-app-mb{
-  background: url("../public/images/AppModernization/AppModern_mob.png") no-repeat;
+  background: url("../public/images/AppModernization/AppModern_mob.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
 /*DTI*/
 .bg-dti{
-  background: url("../public/images/dti/DTI@2x.png") no-repeat;
+  background: url("../public/images/dti/DTI@2x.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
 .bg-dti-mb{
-  background: url("../public/images/dti/dti_mob.png") no-repeat;
+  background: url("../public/images/dti/dti_mob.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
 /* FTL */
 .bg-ftl{
-  background: url("../public/images/ftl/FTL@2x.png") no-repeat;
+  background: url("../public/images/ftl/FTL@2x.webp") no-repeat;
     background-size: 100% 100%;
     padding: 22% 10% 3% 10%;
 }
 .bg-ftl-mb{
-  background: url("../public/images/ftl/ftl_mob.png") no-repeat;
+  background: url("../public/images/ftl/ftl_mob.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
@@ -857,34 +857,34 @@ margin-left: 50% !important;
 
 /* metadata driven */
 .bg-meta{
-  background: url("../public/images/metadata/MetaDataDrivenApplications@2x.png") no-repeat;
+  background: url("../public/images/metadata/MetaDataDrivenApplications@2x.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
 .bg-meta-mb{
-  background: url("../public/images/metadata/MetaDataDrivenApplications_mob.png") no-repeat;
+  background: url("../public/images/metadata/MetaDataDrivenApplications_mob.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
 /* Cloud computing */
 .bg-cloud{
-  background: url("../public/images/cloud/CloudComputing@2x.png") no-repeat;
+  background: url("../public/images/cloud/CloudComputing@2x.webp") no-repeat;
     background-size: 100% 100%;
     padding: 20% 10% 3% 10%;
 }
 .bg-cloud-mb{
-  background: url("../public/images/cloud/CloudComputing_mob.png") no-repeat;
+  background: url("../public/images/cloud/CloudComputing_mob.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }
 /* technology and strategy */
 .bg-tech{
-  background: url("../public/images/technology/TechnologyConsultation@2x.png") no-repeat;
+  background: url("../public/images/technology/TechnologyConsultation@2x.webp") no-repeat;
     background-size: 100% 100%;
     padding: 20% 10% 3% 10%;
 }
 .bg-tech-mb{
-  background: url("../public/images/technology/TechnologyConsultationandStrategy_mob.png") no-repeat;
+  background: url("../public/images/technology/TechnologyConsultationandStrategy_mob.webp") no-repeat;
     background-size: 100% 100%;
     padding: 27% 10% 3% 10%;
 }

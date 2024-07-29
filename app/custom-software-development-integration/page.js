@@ -3,10 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from "./styles.module.css";
 import styles1 from "../../components/ai-intagrate&devolop-content/styles.module.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
-import software from "../../public/images/software/develop.png";
+import software from "../../public/images/software/develop.webp";
 
 export const metadata = {
     title: "Custom Software Development and Integration by i11Labs",
@@ -26,13 +23,13 @@ export default function SoftwareDevelopment() {
     const Develop = [
 
         {
-            img: "/images/software/dev1.png",
+            img: "/images/software/dev1.webp",
             title: "Uniquely tailored features and functions",
             para: <text>When a <span style={{ color: "#F71735" }}>i</span>11Labs creates a custom software product, that application is tailored specifically for the commissioning organization’s use.</text>,
         },
 
         {
-            img: "/images/software/dev2.png",
+            img: "/images/software/dev2.webp",
             title: "A solution only for your business",
             para: <text> <span style={{ color: "#F71735" }}>i</span>11Labs would design the software to work with the commissioning company&apos;s infrastructure, branding and implementation needs, and no other organization could access the application.</text>,
         },
@@ -42,20 +39,20 @@ export default function SoftwareDevelopment() {
 
     const Software = [
         {
-            img: "/images/software/1.png",
+            img: "/images/software/1.webp",
             title: "Ease of use",
             para: "Off-the-shelf applications serve large audiences with fundamentally similar needs. For example, Microsoft Word is an enormously popular word processing application with features, functionality and customization options that organizations of all sizes and scopes can use.",
         },
 
         {
-            img: "/images/software/2.png",
+            img: "/images/software/2.webp",
             title: "Easy access for purchasing or downloading",
             para: "Off-the-shelf software can be prepackaged and purchased , but it’s often downloadable from providers websites or available as a cloud subscription.",
         },
 
 
         {
-            img: "/images/software/3.png",
+            img: "/images/software/3.webp",
             title: "Customizability",
             para: "Popular commercial packages, such as Microsoft Office applications/Salesforce, have a degree of customizability to make the software work better for your team. ",
         },
@@ -67,10 +64,6 @@ export default function SoftwareDevelopment() {
 
     return (
         <>
-
-            <Header />
-
-
 
             <div className='container-fluid'>
                 <div className='row'>
@@ -232,11 +225,6 @@ export default function SoftwareDevelopment() {
         </div>
       </div>
 
-
-
-
-                <Scroll />
-                <Footer />
             </>
             );
 }

@@ -2,10 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from "./styles.module.css";
 import styles1 from "../../components/ai-intagrate&devolop-content/styles.module.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
-import metadatas from "../../public/images/metadata/metadata.png";
+import metadatas from "../../public/images/metadata/metadata.webp";
 
 export const metadata = {
     title: "Meta Data Driven Applications - Dynamic Solutions by i11Labs",
@@ -23,29 +20,29 @@ export default function SoftwareDevelopment() {
     
     const datamanagement = [
         {
-            img: "/images/metadata/1.png",
+            img: "/images/metadata/1.webp",
             title: "Comprehensive Assessment",
             para: "We begin with a thorough assessment of your existing data landscape and application architecture. This includes identifying key data sources, data models, and business requirements to understand how metadata can best be leveraged.",
         },
         {
-            img: "/images/metadata/2.png",
+            img: "/images/metadata/2.webp",
             title: "Metadata Strategy Development",
             para: "Based on the assessment, we develop a tailored metadata strategy that aligns with your business goals. This strategy outlines the structure, governance, and management of metadata within your organization.",
         },
         {
-            img: "/images/metadata/3.png",
+            img: "/images/metadata/3.webp",
             title: "Metadata Repository Implementation",
             para: "We implement a centralized metadata repository that serves as the backbone for your meta data driven applications. This repository stores and manages all metadata, ensuring consistency and accessibility.",
         },
         {
-            img: "/images/metadata/4.png",
+            img: "/images/metadata/4.webp",
             title: "Application Development",
             para: "Using the metadata repository, we build or refactor applications to be metadata-driven. This involves designing the application logic to interpret and act upon metadata, enabling dynamic and flexible behavior.",
         },
     ];
     return (
         <>
-            <Header />
+
 {/* Banner image */}
             <div className='container-fluid'>
                 <div className='row'>
@@ -158,10 +155,8 @@ export default function SoftwareDevelopment() {
           </div>
 
         </div>
-                      </div>
+    </div>
 
-            <Scroll />
-                <Footer />
             </>
             );
 }

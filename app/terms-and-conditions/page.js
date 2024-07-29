@@ -1,6 +1,3 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
 import styles from "../privacy-policy/styles.module.css";
 import Link from "next/link";
 
@@ -18,7 +15,6 @@ export const metadata = {
 export default function TermsandCondition() {
     return (
         <>
-            <Header />
             <div className="container py-4 py-md-5 px-4 ">
                 <div className="row mt-5">
                     <div className="col mt-5">
@@ -49,8 +45,6 @@ export default function TermsandCondition() {
                     </div>
                 </div>
             </div>
-            <Scroll />
-            <Footer />
         </>
     );
 }

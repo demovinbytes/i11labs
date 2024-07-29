@@ -1,14 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
 import styles from "../page.module.css";
-import manage from "../../public/images/dti/manage.png";
-import registration from "../../public/images/dti/registration.png";
-import tracking from "../../public/images/dti/tracking.png";
-import dtiscreenshot from "../../public/images/dti/dtiscreenshot.png";
-// import workorders from "../../public/images/dti/Work Orders Management.png";
+import manage from "../../public/images/dti/manage.webp";
+import registration from "../../public/images/dti/registration.webp";
+import tracking from "../../public/images/dti/tracking.webp";
+import dtiscreenshot from "../../public/images/dti/dtiscreenshot.webp";
+// import workorders from "../../public/images/dti/Work Orders Management.webp";
 
 export const metadata = {
   title: "DumpTruckIt - Efficient Logistics Management Solutions by i11Labs",
@@ -24,32 +21,32 @@ export const metadata = {
 export default function DTI() {
   const solution = [
     {
-      imgurl: "/images/dti/Tickets Management.png",
+      imgurl: "/images/dti/Tickets Management.webp",
       title: "Ticketing Workflow Automation",
       desc: "DumpTruckIt automates the entire manual ticketing process, saving you valuable time and reducing human errors.",
     },
     {
-      imgurl: "/images/dti/Trackingcard.png",
+      imgurl: "/images/dti/Trackingcard.webp",
       title: "Real-Time Driver and Delivery Tracking",
       desc: "Monitor your drivers and deliveries in real-time with precision tracking. DTI provides the visibility you need to assess driver performance.",
     },
     {
-      imgurl: "/images/dti/communication.png",
+      imgurl: "/images/dti/communication.webp",
       title: "Seamless Communication",
       desc: "Facilitates smooth communication between drivers and dispatchers with built-in messaging and calling feature.",
     },
     {
-      imgurl: "/images/dti/reports.png",
+      imgurl: "/images/dti/reports.webp",
       title: "Reporting and Dashboard",
       desc: "Instant overview of day-to-day operations. Custom reports on key metrics for effective budget planning decision making & identifying back-office blind spots.",
     },
     {
-      imgurl: "/images/dti/data.png",
+      imgurl: "/images/dti/data.webp",
       title: "Unlock the Power of Historical Data",
       desc: "DumpTruckIt stores comprehensive data, enabling you to identify opportunities for optimization and business expansion.",
     },
     {
-      imgurl: "/images/dti/invoice.png",
+      imgurl: "/images/dti/invoice.webp",
       title: "Invoicing and Expense Tracking",
       desc: "Automation of invoices & provides break down of expenses for each job site/shift/trucks/drivers.",
     },
@@ -57,14 +54,13 @@ export default function DTI() {
   ]
   return (
     <>
-      <Header />
 
       <div className='container-fluid'>
         <div className='row'>
           <div className='col p-0'>
             <div className={`${styles.homevideo}`}>
               <video className={`${styles.video}`} playsInline autoPlay muted loop>
-                <source src="/images/dti/DTI.mp4" type="video/mp4" />
+                <source src="/images/dti/DTI.webm" type="video/webm" />
               </video>
               <div className="container">
                 <div className={`${styles.homeContent} ps-2 ps-md-0`}>
@@ -189,11 +185,6 @@ export default function DTI() {
         </div>
       </div>
 
-
-
-
-      <Scroll />
-      <Footer />
     </>
   );
 }

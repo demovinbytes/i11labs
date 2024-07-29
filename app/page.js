@@ -3,29 +3,26 @@ import { useRef, useEffect, useState } from 'react';
 import styles from "./page.module.css";
 import Image from "next/image"
 import Link from "next/link"
-import Right from "../public/images/home/right.png"
+import Right from "../public/images/home/right.webp"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Bnrimage from "../public/images/home/new/dump truck it hero image@2x.webp";
-import Bnrimage1 from "../public/images/home/new/feeds to leads hero bnr@2x.png";
-import Bnrimage2 from "../public/images/home/new/know whereabouts crew hero bnr@2x.png";
-import Bnrimage3 from "../public/images/home/new/how we serve you hero bnr@2x.png";
+import Bnrimage1 from "../public/images/home/new/feeds to leads hero bnr@2x.webp";
+import Bnrimage2 from "../public/images/home/new/know whereabouts crew hero bnr@2x.webp";
+import Bnrimage3 from "../public/images/home/new/how we serve you hero bnr@2x.webp";
 import MobBnrimage from "../public/images/home/new/dump truck it@2x.webp";
-import MobBnrimage1 from "../public/images/home/new/feeds to leads m@2x.png";
-import MobBnrimage2 from "../public/images/home/new/know whereabouts crew hero bnr m@2x.png";
-import MobBnrimage3 from "../public/images/home/new/service offerings@2x.png";
-import DTI from "../public/images/home/new/DumpTruckIt.png";
-import FTL from "../public/images/home/new/Feeds To Leads.png";
-import KWC from "../public/images/home/new/Know Whereabouts of Crew.png";
+import MobBnrimage1 from "../public/images/home/new/feeds to leads m@2x.webp";
+import MobBnrimage2 from "../public/images/home/new/know whereabouts crew hero bnr m@2x.webp";
+import MobBnrimage3 from "../public/images/home/new/service offerings@2x.webp";
+import DTI from "../public/images/home/new/DumpTruckIt.webp";
+import FTL from "../public/images/home/new/Feeds To Leads.webp";
+import KWC from "../public/images/home/new/Know Whereabouts of Crew.webp";
 import React, { createRef } from "react";
-import Scroll from "../components/scroll-to-top";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import link from "../public/images/home/link.png";
-import linkedin from "../public/images/home/linkedin.png";
+import link from "../public/images/home/link.webp";
+import linkedin from "../public/images/home/linkedin.webp";
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -35,7 +32,7 @@ function NextArrow(props) {
       style={{ ...style, width: "58px", right: "-50px" }}
       onClick={onClick}
     > <Image
-        src="/images/home/right.svg"
+        src="/images/home/right.webp"
         width={58}
         height={58}
         className="img-fluid arrow"
@@ -55,7 +52,7 @@ function PrevArrow(props) {
       onClick={onClick}
     >
       <Image
-        src="/images/home/left.svg"
+        src="/images/home/left.webp"
         width={58}
         height={58}
         className="img-fluid arrow"
@@ -153,7 +150,7 @@ export default function Home() {
 
   const Power = [
     {
-      img: "/images/home/DTI.jpg",
+      img: "/images/home/DTI.webp",
       title1: "DTI",
       title2: <text><b>D</b>ump<b>T</b>ruck<b>I</b>t</text>,
       title3: "The ultimate product with seamless and non-clunky interface for dump truck operations.",
@@ -161,7 +158,7 @@ export default function Home() {
       position2: 'order-last'
     },
     {
-      img: "/images/home/FTL.jpg",
+      img: "/images/home/FTL.webp",
       title1: "FTL",
       title2: <text><b>F</b>eeds <b>T</b>o <b>L</b>eads</text>,
       title3: "Automate lead generation with AI for targeted prospect identification and improved sales efficiency.",
@@ -171,7 +168,7 @@ export default function Home() {
     },
 
     {
-      img: "/images/home/KWC.jpg",
+      img: "/images/home/KWC.webp",
       title1: "KWC",
       title2: <text><b>K</b>now <b>W</b>hereabouts of <b>C</b>rew</text>,
       title3: "Efficient delivery routes to facilitate optimized scheduling",
@@ -185,15 +182,15 @@ export default function Home() {
   const items = [
     {
       title: 'Biju Nair',
-      description: 'EVP & PRESIDENT',
-      img: "/images/home/new/Biju Nair mob.png",
+      description: 'EVP & President at Assurant',
+      img: "/images/home/new/Biju Nair mob.webp",
       mail: "www.bijunair.me",
       url: "/our-dna#biju"
     },
     {
       title: 'Gertrude Van Horn',
-      description: 'CIO & TECHNOLOGY EXECUTIVE',
-      img: "/images/home/new/gertrude-van-horn mob.png",
+      description: 'CIO & Technology Executive at Rimini Street',
+      img: "/images/home/new/gertrude-van-horn mob.webp",
       mail: "www.gertrudevanhorn.com",
       url: "/our-dna#gvh"
     }
@@ -209,21 +206,21 @@ export default function Home() {
   ]
   const Howweserveyou = [
     {
-      imgurl: "/images/home/new/product oriented delivery.png",
+      imgurl: "/images/home/new/product oriented delivery.webp",
       title: "Product Oriented Delivery",
       desc: "Execute Product Vision and Strategy",
       verticalborder: "verticalcolor",
       flag: true
     },
     {
-      imgurl: "/images/home/new/end to end.png",
+      imgurl: "/images/home/new/end to end.webp",
       title: "End to End",
       desc: "Deliverable based model",
       verticalborder: "verticalcolor",
       flag: true
     },
     {
-      imgurl: "/images/home/new/tag team.png",
+      imgurl: "/images/home/new/tag team.webp",
       title: "Tag Team",
       desc: "Co-development team",
       verticalborder: "",
@@ -297,9 +294,9 @@ export default function Home() {
     });
   }, []);
 
+
   return (
     <>
-      <Header />
 
       {/* carousel */}
       <div className="container-fluid">
@@ -593,13 +590,13 @@ export default function Home() {
         <div className='row py-lg-5 py-3' data-aos="fade-up">
           <div className='col-lg-4 col-md-6 col-12 text-end'>
             <Link href="/dti-dumptruckit">
-               <Image src={DTI} className='img-fluid' alt='DumpTruckIt' title='DumpTruckIt' />
+              <Image src={DTI} className='img-fluid' alt='DumpTruckIt' title='DumpTruckIt' />
             </Link>
           </div>
 
           <div className='col-lg-4 col-md-6 col-12 text-end'>
-          <Link href="/feeds-to-leads">
-            <Image src={FTL} className='img-fluid' alt='Feeds To Leads' title='Feeds To Leads' />
+            <Link href="/feeds-to-leads">
+              <Image src={FTL} className='img-fluid' alt='Feeds To Leads' title='Feeds To Leads' />
             </Link>
           </div>
 
@@ -622,7 +619,7 @@ export default function Home() {
                   <div className="pt-md-2 pt-2"><button className="viewall ps-0"><Link href="/dti-dumptruckit" className="viewallvoiletlink">KNOW MORE</Link></button></div>
                 </div>
                 <Link href="/dti-dumptruckit">
-                <Image src={DTI} className='pt-md-5 pt-4' alt='DumpTruckIt' title='DumpTruckIt' />
+                  <Image src={DTI} className='pt-md-5 pt-4' alt='DumpTruckIt' title='DumpTruckIt' />
                 </Link>
               </div>
             </div>
@@ -636,7 +633,7 @@ export default function Home() {
                   <div className="pt-md-2 pt-2"><button className="viewall ps-0"><Link href="/feeds-to-leads" className="viewallvoiletlink">KNOW MORE</Link></button></div>
                 </div>
                 <Link href="/feeds-to-leads">
-                <Image src={FTL} className='pt-md-5 pt-4' alt='Feeds To Leads' title='Feeds To Leads' />
+                  <Image src={FTL} className='pt-md-5 pt-4' alt='Feeds To Leads' title='Feeds To Leads' />
                 </Link>
               </div>
             </div>
@@ -699,7 +696,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/ai-integration-development/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/ai integration and development.png" alt='AI Integration and Development' className='img-fluid' height={469} width={378} title='AI Integration and Development' />
+                  <Image src="/images/home/ai integration and development.webp" alt='AI Integration and Development' className='img-fluid' height={469} width={378} title='AI Integration and Development' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">AI Integration and Development</h3>
                     <hr className="redline mx-2" />
@@ -711,7 +708,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/application-modernization/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/application modernization.png" alt='Application Modernization' className='img-fluid' height={469} width={378} title='Application Modernization' />
+                  <Image src="/images/home/application modernization.webp" alt='Application Modernization' className='img-fluid' height={469} width={378} title='Application Modernization' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">Application Modernization</h3>
                     <hr className="redline mx-2" />
@@ -723,7 +720,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/meta-data-driven-applications/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/Meta Data Driven Applications.png" alt='Meta Data Driven Applications' className='img-fluid' height={469} width={378} title='Meta Data Driven Applications' />
+                  <Image src="/images/home/Meta Data Driven Applications.webp" alt='Meta Data Driven Applications' className='img-fluid' height={469} width={378} title='Meta Data Driven Applications' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">Meta Data Driven Applications</h3>
                     <hr className="redline mx-2" />
@@ -735,7 +732,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/cloud-computing-infrastructure-solutions/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/cloud computing.png" alt='Cloud Computing' className='img-fluid' height={469} width={378} title='Cloud Computing' />
+                  <Image src="/images/home/cloud computing.webp" alt='Cloud Computing' className='img-fluid' height={469} width={378} title='Cloud Computing' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">Cloud Computing and Infrastructure Solutions</h3>
                     <hr className="redline mx-2" />
@@ -745,9 +742,9 @@ export default function Home() {
               </Link>
             </div>
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
-              <Link href="/technology-consultation-strategy"  className="text-decoration-none" >
+              <Link href="/technology-consultation-strategy" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/technology consultation.png" alt='Technology Consultation and Strategy' className='img-fluid' height={469} width={378} title='Technology Consultation and Strategy' />
+                  <Image src="/images/home/technology consultation.webp" alt='Technology Consultation and Strategy' className='img-fluid' height={469} width={378} title='Technology Consultation and Strategy' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">Technology Consultation and Strategy</h3>
                     <hr className="redline mx-2" />
@@ -759,7 +756,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/custom-software-development-integration/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/custom software development.png" alt='Custom Software Development' className='img-fluid' height={469} width={378} title='Custom Software Development' />
+                  <Image src="/images/home/custom software development.webp" alt='Custom Software Development' className='img-fluid' height={469} width={378} title='Custom Software Development' />
                   <div className="intro">
                     <h3 className="text-h1 pt-0">Custom Software Development and Integration</h3>
                     <hr className="redline mx-2" />
@@ -778,7 +775,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/ai-integration-development/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/ai integration and development.png" alt='AI Integration and Development' className='img-fluid w-100' height={469} width={378} title='AI Integration and Development' />
+                  <Image src="/images/home/ai integration and development.webp" alt='AI Integration and Development' className='img-fluid w-100' height={469} width={378} title='AI Integration and Development' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">AI Integration and Development</h3>
                     <hr className="redline mx-2" />
@@ -790,7 +787,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/application-modernization/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/application modernization.png" alt='Application Modernization' className='img-fluid w-100' height={469} width={378} title='Application Modernization' />
+                  <Image src="/images/home/application modernization.webp" alt='Application Modernization' className='img-fluid w-100' height={469} width={378} title='Application Modernization' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">Application Modernization</h3>
                     <hr className="redline mx-2" />
@@ -802,7 +799,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/meta-data-driven-applications/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/Meta Data Driven Applications.png" alt='Meta Data Driven Applications' className='img-fluid w-100' height={469} width={378} title='Meta Data Driven Applications' />
+                  <Image src="/images/home/Meta Data Driven Applications.webp" alt='Meta Data Driven Applications' className='img-fluid w-100' height={469} width={378} title='Meta Data Driven Applications' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">Meta Data Driven Applications</h3>
                     <hr className="redline mx-2" />
@@ -814,7 +811,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/cloud-computing-infrastructure-solutions/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/cloud computing.png" alt='Cloud Computing' className='img-fluid w-100' height={469} width={378} title='Cloud Computing' />
+                  <Image src="/images/home/cloud computing.webp" alt='Cloud Computing' className='img-fluid w-100' height={469} width={378} title='Cloud Computing' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">Cloud Computing and Infrastructure Solutions</h3>
                     <hr className="redline mx-2" />
@@ -826,7 +823,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/technology-consultation-strategy" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/technology consultation.png" alt='Technology Consultation and Strategy' className='img-fluid w-100' height={469} width={378} title='Technology Consultation and Strategy' />
+                  <Image src="/images/home/technology consultation.webp" alt='Technology Consultation and Strategy' className='img-fluid w-100' height={469} width={378} title='Technology Consultation and Strategy' />
                   <div className="intro">
                     <h3 className="text-h1 pt-xl-4 pt-0">Technology Consultation and Strategy</h3>
                     <hr className="redline mx-2" />
@@ -838,7 +835,7 @@ export default function Home() {
             <div className="col-lg-4 col-md-6 col-12 pt-5" data-aos="fade-up">
               <Link href="/custom-software-development-integration/" className="text-decoration-none" >
                 <div className="cards">
-                  <Image src="/images/home/custom software development.png" alt='Custom Software Development' className='img-fluid w-100' height={469} width={378} title='Custom Software Development' />
+                  <Image src="/images/home/custom software development.webp" alt='Custom Software Development' className='img-fluid w-100' height={469} width={378} title='Custom Software Development' />
                   <div className="intro">
                     <h3 className="text-h1 pt-0">Custom Software Development and Integration</h3>
                     <hr className="redline mx-2" />
@@ -908,12 +905,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
 
       <main className="d-none d-lg-block py-5" data-aos="fade-up">
         <div className={`${styles.bgimage} container-fluid py-5 `}
-          style={{ backgroundImage: "url('/images/home/quote bg.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}     >
-          <p className={`${styles.bgtext2} text-center  mt-5`}> "IDEAS ARE EASY, <br />EXECUTION IS EVERYTHING."</p>
+          style={{ backgroundImage: "url('/images/home/quote bg.webp')", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}     >
+          <p className={`${styles.bgtext2} text-center  mt-5`}> 'IDEAS ARE EASY, <br />EXECUTION IS EVERYTHING.'</p>
           <p className={`${styles.para3} text-center text-white mb-5`}> - John Doerr </p>
         </div>
       </main>
@@ -921,8 +918,8 @@ export default function Home() {
       {/* mobile screen */}
       <main className="d-block d-lg-none py-3" data-aos="fade-up">
         <div className={`${styles.bgimage} container-fluid py-5 `}
-          style={{ backgroundImage: "url('/images/home/quote bg-sm.jpg')", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}     >
-          <p className={`${styles.bgtext2} text-center  mt-5`}> "IDEAS ARE EASY, <br />EXECUTION IS EVERYTHING."</p>
+          style={{ backgroundImage: "url('/images/home/quote bg-sm.webp')", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}     >
+          <p className={`${styles.bgtext2} text-center  mt-5`}> 'IDEAS ARE EASY, <br />EXECUTION IS EVERYTHING.'</p>
           <p className={`${styles.para3} text-center text-white mb-5`}> - John Doerr </p>
         </div>
       </main>
@@ -932,8 +929,8 @@ export default function Home() {
         <div className="row">
           <div className="col-12 col-xl-4 col-lg-3 py-3 px-4 px-lg-2">
             <div style={{ borderLeft: "4px solid #F71735" }} >
-            <p className={`${styles.para4} ps-4  mb-0`}>OUR</p>
-            <p className={`${styles.para4} ps-4  `}>ADVISORS</p>
+              <p className={`${styles.para4} ps-4  mb-0`}>OUR</p>
+              <p className={`${styles.para4} ps-4  `}>ADVISORS</p>
             </div>
             {/* <div className="ps-4"><button className="viewall ps-0"><Link href="/our-DNA" className="viewallvoiletlink">KNOW MORE</Link></button></div> */}
           </div>
@@ -947,11 +944,12 @@ export default function Home() {
                       <div className="card p-1 p-md-2">
                         <div className="card-bodys">
                           <div className="card">
-                            <div className={`${styles.hashborder}`}  >
-                              <p className={`${styles.para5} ${styles.overflowtext} pe-md-1 pe-lg-3 `}>{item.title}</p>
-                              <p className={`${styles.para6}  `} >
+                            <div className={`${styles.hashborder}`} style={{ height: "100px" }} >
+                              <p className={`${styles.para5} ${styles.overflowtext} pe-md-1 pe-lg-3`}>{item.title}</p>
+                              {/* <p className={`${styles.para6} mb-0`}>{item.description1}</p> */}
+                              <p className={`${styles.para6}`} >
                                 {/* <Image
-                                src="/images/home/read time.svg"
+                                src="/images/home/read time.webp"
                                 width={18}
                                 height={18}
                                 className="img-fluid"
@@ -959,7 +957,7 @@ export default function Home() {
                                 alt="Next arrow"
                               /> */}
                                 <span className="">{item.description}</span>
-                                <Image className="float-end me-4" src={linkedin} width={27} height={27}/></p>
+                                <Image className="float-end me-4" src={linkedin} width={27} height={27} /></p>
                               {/* <div className="mb-0 " >
                               <Image className='d-inline' src={link} width={16} height={16}/>
                               <span className={`${styles.subheading} ps-2`}><u>{item.mail}</u></span>
@@ -967,7 +965,7 @@ export default function Home() {
                              </div>  */}
                             </div>
 
-                            <div className="col-12 pt-3 pt-lg-4 ">
+                            <div className="col-12 pt-3 pt-lg-4 h-100">
                               <Image
                                 src={item.img}
                                 width={276}
@@ -1012,18 +1010,19 @@ export default function Home() {
                     <div className="card p-1 p-md-4">
                       <div className="card-bodys">
                         <div className="card">
-                          <div >
-                            <p className={`${styles.para5} ${styles.overflowtext} pe-md-1 pe-lg-3 `}>{item.title}</p>
+                          <div style={{ height: "100px" }}>
+                            <p className={`${styles.para5} ${styles.overflowtext} pe-md-1 pe-lg-3`}>{item.title}</p>
+                            {/* <p className={`${styles.para6} mb-0`}>{item.description1}</p> */}
                             <p className={`${styles.para6} mb-0 `} >
                               {/* <Image
-                              src="/images/home/read time.svg"
+                              src="/images/home/read time.webp"
                               width={18}
                               height={18}
                               className="img-fluid"
                               title="Next"
                               alt="Next arrow"
                             /> */}
-                              <span className="">{item.description}</span><Image className="float-end me-4" src={linkedin} width={27} height={27}/></p>
+                              <span className="">{item.description}</span><Image className="float-end me-4" src={linkedin} width={27} height={27} /></p>
                             {/* <Image src={link} width={16} height={16}/><span className="ps-2 ">{item.mail}</span><Image className="float-end" src={linkedin} width={27} height={27}/> */}
                           </div>
 
@@ -1049,9 +1048,6 @@ export default function Home() {
         </div>
       </div>
 
-
-      <Scroll />
-      <Footer />
     </>
   );
 }

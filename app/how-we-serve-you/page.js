@@ -2,9 +2,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import styles from "./styles.module.css"
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
 import integrate from "../../public/images/AI/unsplash.png"
 import arrow from "../../public/images/AI/right.svg"
 
@@ -26,21 +23,21 @@ export default function ServiceOfferings() {
 
     const Howweserveyou = [
         {
-            imgurl: "/images/serve/productorienteddelivery.png",
+            imgurl: "/images/serve/productorienteddelivery.webp",
             title: "Product Oriented Delivery",
             desc: "Execute Product Vision and Strategy",
             verticalborder: "verticalcolor",
             flag: true
         },
         {
-            imgurl: "/images/serve/endtoend.png",
+            imgurl: "/images/serve/endtoend.webp",
             title: "End to End",
             desc: "Deliverable based model",
             verticalborder: "verticalcolor",
             flag: true
         },
         {
-            imgurl: "/images/serve/tagteam.png",
+            imgurl: "/images/serve/tagteam.webp",
             title: "Tag Team",
             desc: "Co-development team",
             verticalborder: "",
@@ -51,25 +48,25 @@ export default function ServiceOfferings() {
 
     const Service = [
         {
-            img: "/images/serve/1.png",
+            img: "/images/serve/1.webp",
             title: "Real-world Solutions",
             para: "We deliver practical solutions that address your specific challenges and opportunities. Our approach offers pragmatic strategies and actionable plans for tangible results in the shortest time frame.",
         },
 
         {
-            img: "/images/serve/2.png",
+            img: "/images/serve/2.webp",
             title: "Client-Centric Approach",
             para: "We put you at the center of everything we do, building strong relationships based on trust, transparency, and open communication. Together, we develop tailor-made solutions to fit your unique requirements.",
         },
 
         {
-            img: "/images/serve/3.png",
+            img: "/images/serve/3.webp",
             title: "Results-Oriented",
             para: "Our goal is to deliver results that drive business growth and success. Whether improving efficiency, increasing revenue, or enhancing customer satisfaction, we measure our success by the impact we create for you.",
         },
 
         {
-            img: "/images/serve/4.png",
+            img: "/images/serve/4.webp",
             title: "Flexibility and Adaptability",
             para: "In a world of constant disruption, flexibility and adaptability are imperative. These qualities are our ethos, allowing us to thrive in unpredictable circumstances. We embrace feedback, iterate relentlessly, and remain agile in our pursuit of excellence, always striving to exceed expectations and deliver unparalleled value.",
         },
@@ -80,10 +77,6 @@ export default function ServiceOfferings() {
 
     return (
         <>
-
-            <Header />
-
-
 
             <div className='container-fluid'>
                 <div className='row'>
@@ -143,9 +136,9 @@ export default function ServiceOfferings() {
 
             <main className="d-none d-lg-block" data-aos="fade-up">
                 <div className={`${styles.bgimage} container-fluid py-5 `}
-                    style={{ backgroundImage: "url('/images/serve/quote bg.png')", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}     >
+                    style={{ backgroundImage: "url('/images/serve/quote bg.webp')", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}     >
                     <div className="py-3 py-md-5 my-3 my-md-5">
-                        <p className={`${styles.bgtext2} text-center  `}> "VISION WITHOUT EXECUTION < br />IS JUST HALLUCINATION."</p>
+                        <p className={`${styles.bgtext2} text-center  `}> 'VISION WITHOUT EXECUTION < br />IS JUST HALLUCINATION.'</p>
                         <p className={`${styles.para2} text-center text-white `}> - Thomas Edison</p>
                     </div>
                 </div>
@@ -153,9 +146,9 @@ export default function ServiceOfferings() {
 
             <main className="d-block d-lg-none" data-aos="fade-up">
                 <div className={`${styles.bgimage} container-fluid py-5 `}
-                    style={{ backgroundImage: "url('/images/serve/quote bg@2x mob.png')", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}     >
+                    style={{ backgroundImage: "url('/images/serve/quote bg@2x mob.webp')", backgroundRepeat: "no-repeat", backgroundSize: "cover", }}     >
                     <div className="py-3 py-md-5 my-3 my-md-5">
-                        <p className={`${styles.bgtext2} text-center  `}> "VISION WITHOUT EXECUTION < br />IS JUST HALLUCINATION."</p>
+                        <p className={`${styles.bgtext2} text-center  `}> 'VISION WITHOUT EXECUTION < br />IS JUST HALLUCINATION.'</p>
                         <p className={`${styles.para2} text-center text-white `}> - Thomas Edison</p>
                     </div>
                 </div>
@@ -195,14 +188,6 @@ export default function ServiceOfferings() {
                 </div>
             </div>
 
-
-
-
-
-
-
-            <Scroll />
-            <Footer />
         </>
     );
 }

@@ -1,7 +1,4 @@
 'use client'
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
 import styles from "../../app/page.module.css";
 import Link from "next/link"
 import { useRouter } from "next/navigation";
@@ -73,7 +70,6 @@ const Contact = () => {
 
     return (
         <>
-            <Header />
             <div className="container-fluid mb-5">
                 <div className="row">
                     <div className="col-lg-4 col-md-5 col-12 p-5" id="bgcolorsection">
@@ -148,8 +144,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <Scroll />
-            <Footer />
         </>
     )
 }

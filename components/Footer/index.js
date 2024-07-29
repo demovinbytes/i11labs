@@ -3,7 +3,7 @@ import React from "react";
 import style from "./footer.module.css"
 import Link from "next/link";
 import Image from "next/image";
-import footerlogo from "../../public/images/home/new/i11 labs logo.png";
+import footerlogo from "../../public/images/home/new/i11 labs logo.webp";
 
 export default function Footer() {
 
@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="container">
               <div className="row mb-3">
                 <div className="col-lg-1 col-12">
-                  <Link href="/" onClick={handleClick}><Image src={footerlogo} className="img-fluid" alt="Arthacera Technologies" title="Arthacera Technologies" /></Link>
+                  <Link href="/"><Image src={footerlogo} className="img-fluid" alt="i11labs" title="i11labs" /></Link>
                 </div>
                 <div className="col-lg-11 col-12 ps-lg-5 pt-lg-0 pt-5">
                   <div className="row">

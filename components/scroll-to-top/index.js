@@ -2,7 +2,7 @@
 import Image from "next/image"
 import React, { useEffect, useState } from "react"
 // import Uparrow from "../../assets/images/go to top/up arrow.svg"
-import Uparrow1 from "../../public/images/got-to-top/Group.svg";
+import Uparrow1 from "../../public/images/got-to-top/Group.webp";
 
 const Scroll = () => {
 

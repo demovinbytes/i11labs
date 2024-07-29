@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import Mail from "../../public/images/contact/mail.svg";
+import Mail from "../../public/images/contact/mail.webp";
 import styles from "../page.module.css";
 import Link from "next/link";
 import Image from "next/image"

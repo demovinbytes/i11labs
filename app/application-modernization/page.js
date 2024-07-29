@@ -1,11 +1,8 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
 import styles from "../page.module.css";
 import styles1 from "../../components/ai-intagrate&devolop-content/styles.module.css";
 import Image from "next/image";
 import Link from "next/link"
-import purpose from "../../public/images/AppModernization/pexels-pixabay-221185.png";
+import purpose from "../../public/images/AppModernization/pexels-pixabay-221185.webp";
 
 export const metadata = {
   title: "Application Modernization Services by i11Labs",
@@ -23,24 +20,23 @@ export default function ApplicationModernization() {
 
   const stage = [
     {
-      imgurl: "/images/AppModernization/1.png",
+      imgurl: "/images/AppModernization/1.webp",
       title: "Planning",
       desc: "Execute Product Vision and StrategThis first step requires organizations to think carefully about their app modernization goals and define their strategy before any action is taken. This is the time to discover and assess existing apps and environments in preparation for change.",
     },
     {
-      imgurl: "/images/AppModernization/2.png",
+      imgurl: "/images/AppModernization/2.webp",
       title: "Execution",
       desc: <text>During this step, organizations build new skills and begin modernizing their apps iteratively. An iterative application modernization strategy gives organizations the flexibility to change their modernization scope or strategy as needed.<br/><br/> By using containers and a container orchestration platform like Kubernetes or OpenShift to deploy your applications, and by adopting DevOps best practices, like CI/CD, you can take the first step toward modernization and deliver applications more frequently, with greater ease than before. Further, when you refactor by breaking monolithic apps into smaller deployable units and ultimately microservices, you can update separate parts of your app; and, when you use CI/CD, you can roll back updates to running versions in case of issues.</text>,
     },
     {
-      imgurl:"/images/AppModernization/3.png",
+      imgurl:"/images/AppModernization/3.webp",
        title: "Operations",
        desc : "Application modernization is not a one-and-done deal. Once organizations move to a cloud-first approach, they can use cloud platform services and tools to help secure, govern, manage, and optimize their apps."
     }
   ]
     return (
         <>
-          <Header />
 
           <div className='container-fluid'>
         <div className='row'>
@@ -139,10 +135,7 @@ export default function ApplicationModernization() {
 
         </div>
       </div>
-
-
-          <Scroll />
-      <Footer />
+      
     </>
   );
 }

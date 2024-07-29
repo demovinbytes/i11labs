@@ -1,16 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
 import styles from "../page.module.css";
-import reports from "../../public/images/ftl/reports.png";
-import schedule from "../../public/images/ftl/schedule.png";
-import email from "../../public/images/ftl/email.png";
-import Ftlscreenshot from "../../public/images/ftl/FTL screenshot.png";
-import data from "../../public/images/ftl/data.png";
-import insights from "../../public/images/ftl/insights.png";
-import email1 from "../../public/images/ftl/email1.png";
+import reports from "../../public/images/ftl/reports.webp";
+import schedule from "../../public/images/ftl/schedule.webp";
+import email from "../../public/images/ftl/email.webp";
+import Ftlscreenshot from "../../public/images/ftl/FTL screenshot.webp";
+import data from "../../public/images/ftl/data.webp";
+import insights from "../../public/images/ftl/insights.webp";
+import email1 from "../../public/images/ftl/email1.webp";
 
 export const metadata = {
   title: "Feeds to Leads - AI-Powered Lead Generation by i11Labs",
@@ -27,7 +24,6 @@ export const metadata = {
 export default function FTL() {
     return (
         <>
-          <Header />
 
           <div className='container-fluid'>
         <div className='row'>
@@ -163,8 +159,7 @@ export default function FTL() {
         <button className={`${styles.connectbtn} `}>LET&apos;S CONNECT</button> </Link>
      </div> 
 </div>
-          <Scroll />
-      <Footer />
+
     </>
   );
 }

@@ -1,44 +1,27 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import Scroll from "../../components/scroll-to-top";
-// import DNA from "../../public/images/our-DNA/dna@2x.png";
+// import DNA from "../../public/images/our-DNA/dna@2x.webp";
 import styles from "../../app/page.module.css";
-import Adapt from "../../public/images/our-DNA/adapt.png";
-import Happy from "../../public/images/our-DNA/happy.png";
-import Integrity from "../../public/images/our-DNA/integrity.png";
-import Silver from "../../public/images/our-DNA/silver.png";
-import Goldne from "../../public/images/our-DNA/goldne.png";
-import linkedin from "../../public/images/our-DNA/linkedin.png";
-import Biju from "../../public/images/our-DNA/Biju Nair.png";
-import GVH from "../../public/images/our-DNA/gertrude-van-horn.png";
-import Bijumob from "../../public/images/our-DNA/Biju Nair mob.png";
-import GVHmob from "../../public/images/our-DNA/gertrude-van-horn mob.png"
-// import Micheal from "../../public/images/our-DNA/Micheal.png";
+import Adapt from "../../public/images/our-DNA/adapt.webp";
+import Happy from "../../public/images/our-DNA/happy.webp";
+import Integrity from "../../public/images/our-DNA/integrity.webp";
+import Silver from "../../public/images/our-DNA/silver.webp";
+import Goldne from "../../public/images/our-DNA/goldne.webp";
+import linkedin from "../../public/images/our-DNA/linkedin.webp";
+import Biju from "../../public/images/our-DNA/Biju Nair.webp";
+import GVH from "../../public/images/our-DNA/gertrude-van-horn.webp";
+import Bijumob from "../../public/images/our-DNA/Biju Nair mob.webp";
+import GVHmob from "../../public/images/our-DNA/gertrude-van-horn mob.webp"
+// import Micheal from "../../public/images/our-DNA/Micheal.webp";
 import { useEffect } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Link from "next/link";
-import link1  from "../../public/images/home/link.png";
-import linkedin1 from "../../public/images/home/linkedin.png";
+import link1  from "../../public/images/home/link.webp";
+import linkedin1 from "../../public/images/home/linkedin.webp";
 
 export default function ourDNA() {
-
-  useEffect(() => {
-    // Load Masonry library
-    const loadMasonry = async () => {
-      const Masonry = (await import('masonry-layout')).default;
-      const masonry = new Masonry('.grid', {
-        itemSelector: '.grid-item',
-        columnWidth: 190,
-        gutter: 18
-      });
-    };
-
-    loadMasonry();
-  }, []);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -49,27 +32,27 @@ export default function ourDNA() {
   };
   const stage = [
     {
-      imgurl: "/images/our-DNA/adapt.png",
+      imgurl: "/images/our-DNA/adapt.webp",
       title: "Adaptability & Flexibility",
       desc: "We embrace feedback, iterate relentlessly, and remain agile in our pursuit of excellence, always striving to exceed expectations and deliver unparalleled value to our clients.",
     },
     {
-      imgurl: "/images/our-DNA/integrity.png",
+      imgurl: "/images/our-DNA/integrity.webp",
       title: "Integrity",
       desc: "Integrity is the foundation of our trust and credibility. We always do the right thing, fostering a culture of honesty, respect, and accountability.",
     },
     {
-      imgurl: "/images/our-DNA/happy.png",
+      imgurl: "/images/our-DNA/happy.webp",
       title: "Happy Team Equals Happy Customer",
       desc: " Employee satisfaction drives customer loyalty. When our team feels valued and supported, they deliver exceptional service, enhancing the overall customer experience. We provide a work environment that promotes a balanced lifestyle.",
     },
     {
-      imgurl: "/images/our-DNA/silver.png",
+      imgurl: "/images/our-DNA/silver.webp",
       title: "Silver Rule",
       desc: " Don’t do to others what you don’t want them to do to you.",
     },
     {
-      imgurl: "/images/our-DNA/goldne.png",
+      imgurl: "/images/our-DNA/goldne.webp",
       title: "Golden Rule",
       desc: <text>"Treat others as you wish to be treated." This principle of kindness, respect, and consideration fosters healthy relationships, ethical behavior, and constructive communication</text> ,
     },
@@ -77,7 +60,6 @@ export default function ourDNA() {
 
   return (
     <>
-      <Header />
 
       <div className='container-fluid'>
         <div className='row'>
@@ -85,7 +67,7 @@ export default function ourDNA() {
             {/* <Image src={DNA} className='img-fluid w-100' alt='our DNA' title='our DNA' /> */}
             <div className={`${styles.homevideo}`}>
                         <video className={`${styles.video}`} playsInline autoPlay muted loop>
-                           <source src="/images/our-DNA/ourDNA.mp4" type="video/mp4" />
+                           <source src="/images/our-DNA/ourDNA.webm" type="video/webm" />
                         </video>
                         <div className="container">
                             <div className={`${styles.homeContent} ps-2 ps-md-0`}>
@@ -220,8 +202,9 @@ export default function ourDNA() {
           <div className="col-lg-8 col-12 p-5 ">
             <div className="row">
               <div className="col-10">
-              <Link href="#" onClick={handleClick} className="text-decoration-none"><p className={`${styles.para5} mb-0`}>Biju Nair</p></Link>
-                <p className={`${styles.subheading} mb-0`}>EVP & PRESIDENT</p>
+              <Link href="#" onClick={handleClick} className="text-decoration-none"><p className={`${styles.para5} mb-0`}>Biju Nair </p></Link>
+                <p className={`${styles.subheading} mb-0`}>EVP & President at Assurant</p>
+               
                 {/* <p className="mb-0 text-start" >
                               <Image className='d-inline' src={link1} width={16} height={16}/>
                               <span className={`${styles.subheading} ps-2`}><u>www.bijunair.me</u></span>
@@ -236,7 +219,7 @@ export default function ourDNA() {
             
             <hr></hr>
             
-            <p className={`${styles.para3} pt-3`}>Biju Nair's entrepreneurial and innovation leadership spans over 25 years. Currently, he serves as EVP & President of Assurant’s Global Connected Living business unit and is a member of the company's Management Committee. He also oversees Assurant’s International operations. <br/><br/>Biju has been at the helm of numerous tech startups in the telecommunications software domain, all of which have exited through successful acquisition and integration into public companies, creating tremendous returns for its employees and shareholders. Biju holds several patents in wireless technology and is a frequent speaker at major conferences. He has been a finalist for Ernst & Young's Entrepreneur of the Year and received the IEEE Chairman’s Award for Communications Quality and Reliability.</p>
+            <p className={`${styles.para3} pt-3`}>Biju Nair's entrepreneurial and innovation leadership spans over 25 years. Currently, he serves as EVP & President of Assurant’s Global Connected Living business unit and is a member of the company's Management Committee. He also oversees Assurant’s International operations. <br/><br/>Biju has been at the helm of numerous tech startups in the telecommunications software domain, all of which have exited through successful acquisition and integration into public companies, creating tremendous returns for its employees and shareholders. <br/><br/>Biju holds several patents in wireless technology and is a frequent speaker at major conferences. He has been a finalist for Ernst & Young's Entrepreneur of the Year and received the IEEE Chairman’s Award for Communications Quality and Reliability.</p>
           </div>
           <div id="gvh"></div>
         </div>
@@ -254,7 +237,8 @@ export default function ourDNA() {
               <div className="row">
                 <div className="col-10 pt-4 px-0 px-sm-3">
                 <Link href="#" onClick={handleClick} className="text-decoration-none"><p className={`${styles.para5} mb-0`}>Gertrude Van Horn</p></Link>
-                  <p className={`${styles.subheading} mb-0`}>CIO & TECHNOLOGY EXECUTIVE</p>
+                {/* <p className={`${styles.para6}`}>Executive Vice President</p> */}
+                  <p className={`${styles.subheading} mb-0`}>CIO & Technology Executive at Rimini Street</p>
                   {/* <p className="mb-0 text-start" >
                               <Image className='d-inline' src={link1} width={16} height={16}/>
                               <span className={`${styles.subheading} ps-2`}><u>www.gertrudevanhorn.com</u></span>
@@ -298,9 +282,6 @@ export default function ourDNA() {
 
       </div>
 
-
-      <Scroll />
-      <Footer />
     </>
   );
 }
